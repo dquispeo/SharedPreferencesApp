@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EncuestaActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/text_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Daniel Quispe"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/text_carrera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Software"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:paddingEnd="26dp"
+            android:checked="true"
+        android:text="Masculino"
+        android:textSize="24sp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femenino"
+            android:textSize="24sp"/>
+    </RadioGroup>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Aceptar los términos y condiciones"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        />
+</LinearLayout>
